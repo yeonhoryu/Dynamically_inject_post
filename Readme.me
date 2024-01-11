@@ -1,0 +1,21 @@
+Project: Dynamically Inject Posts
+
+Summmary: This porject is how to use web server data by using fetch.
+          Fetch return sever data using asynchronous method.
+
+Functions:
+1. fetch: retrieve data from web server. This function always return the values within promise. 
+   async function getPosts(url) {
+    const response = await fetch(url);
+    const content = await response.json();
+    renderPosts(content);
+  }
+  getPosts(url);
+
+Program:
+1. Index.Html: the function of getPosts(url) retrieve Json data using url. 
+               fetch function consisted fetch(url), response.json, and return json data. 
+2. posts.js: sample data for json.
+
+
+
